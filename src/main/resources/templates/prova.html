@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{default}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <h1 th:text="${prova}"></h1>
+                    <th>Ragione Sociale</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Indirizzo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="azienda : ${aziendeList}">
+                    <td th:text="${azienda.ragioneSociale}"></td>
+                    <td th:text="${azienda.email}"></td>
+                    <td th:text="${azienda.telefono}"></td>
+                    <td th:text="${azienda.indirizzo}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

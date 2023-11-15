@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <<head></head>
+    <body>
+        <form action="#" th:action="@{/views/aggiungi-azienda}" th:object="${aziende}" method="POST">
+            <label for="ragioneSociale">Ragione Sociale</label>
+            <input type="text" th:field="*{ragioneSociale}" id="ragioneSociale" placeholder="Ragione Sociale">
+            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+            <label for="email">Email</label>
+            <input type="text" th:field="*{email}" id="email" placeholder="Email">
+            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+            <label for="telefono">Telefono</label>
+            <input type="text" th:field="*{telefono}" id="telefono" placeholder="Telefono">
+            <span th:if="${#fields.hasErrors('telefono')}" th:errors="*{email}"></span>
+            <label for="indirizzo">Indirizzo</label>
+            <input type="text" th:field="*{indirizzo}" id="indirizzo" placeholder="Indirizzo">
+            <span th:if="${#fields.hasErrors('indirizzo')}" th:errors="*{email}"></span>
+            <!--<input type="submit" value="Aggiungi Azienda">-->
+            <button id="add-azienda">Aggiungi Azienda</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<div sec:authorize="isAuthenticated()">-->
+        <!--<div>You are Authenticated as <span sec:authentication="name"></span></div>-->
+        <!--<div>You are Authenticated as <span>th:text="${#authentication.getPrincipal().getSomeProperty()}"</span></div>-->
+        <!--<p th:text="${#authentication.getPrincipal().getEmail()}"></p>-->
+    <form>
+        <!--<p th:text="${user}">-->
+        <p>
+            <input type="text" th:value="${user.username}"/>
+            <input type="text" th:value="${user.email}"/>
+        </p>
+    </form>
+</body>
+</html>
