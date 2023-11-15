@@ -2,6 +2,8 @@
 
 <h3>Portale web app per interazione tra aziende in ambito B2B</h3>
 
+<b>Tecnologia:</b> Java 8/17, Spring, Spring Boot, JPA, MySQL
+
 La versione <b>backend Java/Spring</b> di una web app (architettura MVC) che ha lo scopo di gestire utenti e richieste esterne, veicolandoli all'interno di un DB al fine di collegare l'azienda cliente con altre realtà commerciali/industriali.<br>
 Sotto vengono elencate alcune delle features principali.
 
